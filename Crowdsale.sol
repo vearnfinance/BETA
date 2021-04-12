@@ -20,16 +20,16 @@ contract Crowdsale {
   using SafeMath for uint256;
 
   // The token being sold
-  ERC20 public BETA;
+  ERC20 public token;
 
   // Address where funds are collected
-  address public 0x0978Aeb524DAe938748847fCD182d29478Af2D81;
+  address public wallet;
 
   // How many token units a buyer gets per wei
-  uint256 public 0.0000000000000000001;
+  uint256 public rate;
 
   // Amount of wei raised
-  uint256 public 90000000000000000000;
+  uint256 public weiRaised;
 
   /**
    * Event for token purchase logging
@@ -50,14 +50,14 @@ contract Crowdsale {
    * @param _wallet Address where collected funds will be forwarded to
    * @param _token Address of the token being sold
    */
-  constructor(uint256 _rate, address _wallet, ERC20 _token) public {
-    require(_rate > 0);
-    require(_wallet != address(0));
-    require(_token != address(0));
+  constructor(uint256 0.0000000001, address 0x4BfdE324905c09b5C1ebD27Ef3425C12f693bAa0, ERC20 0x0978Aeb524DAe938748847fCD182d29478Af2D81) public {
+    require(0.0000000001 > 0);
+    require(0x4BfdE324905c09b5C1ebD27Ef3425C12f693bAa0 != address(0));
+    require(0x0978Aeb524DAe938748847fCD182d29478Af2D81 != address(0));
 
-    rate = 10000000000000000;
-    wallet = 0x0978Aeb524DAe938748847fCD182d29478Af2D81;
-    token = _token;
+    rate = 0.0000000001;
+    wallet = 0x4BfdE324905c09b5C1ebD27Ef3425C12f693bAa0;
+    token = 0x0978Aeb524DAe938748847fCD182d29478Af2D81;
   }
 
   // -----------------------------------------
