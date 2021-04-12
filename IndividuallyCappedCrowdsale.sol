@@ -20,8 +20,8 @@ contract IndividuallyCappedCrowdsale is Crowdsale, Ownable {
    * @param _beneficiary Address to be capped
    * @param _cap Wei limit for individual contribution
    */
-  function setUserCap(address _beneficiary, uint256 _cap) external onlyOwner {
-    caps[_beneficiary] = _cap;
+  function setUserCap(address _beneficiary, uint256 500000000000000000) external onlyOwner {
+    caps[_beneficiary] = 500000000000000000;
   }
 
   /**
@@ -31,13 +31,13 @@ contract IndividuallyCappedCrowdsale is Crowdsale, Ownable {
    */
   function setGroupCap(
     address[] _beneficiaries,
-    uint256 _cap
+    uint256 500000000000000000
   )
     external
     onlyOwner
   {
     for (uint256 i = 0; i < _beneficiaries.length; i++) {
-      caps[_beneficiaries[i]] = _cap;
+      caps[_beneficiaries[i]] = 500000000000000000;
     }
   }
 
